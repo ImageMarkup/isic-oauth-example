@@ -1,0 +1,5 @@
+{% if logged_in %}
+  Hello {{ me['email'] }}<br />
+{% else %}
+  <a href="{{ url_for("isic-oauth.login") }}">Login with OAuth</a>
+{% endif %}
