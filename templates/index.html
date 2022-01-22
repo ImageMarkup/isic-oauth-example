@@ -1,5 +1,5 @@
 {% if logged_in %}
-  Hello {{ me['email'] }}<br />
+  Hello {{ me['email'] }}. <a href="{{ url_for("logout") }}">Logout</a><br />
 {% else %}
-  <a href="{{ url_for("isic-oauth.login") }}">Login with OAuth</a>
+  <a href="{{ url_for("login") }}">Login with OAuth</a>
 {% endif %}

@@ -38,7 +38,7 @@ setup(
     python_requires='>=3.9',
     packages=find_packages(),
     include_package_data=True,
-    install_requires=['flask', 'flask-dance'],
+    install_requires=['flask', 'authlib'],
     extras_require={
         'dev': [
             'ipython',
