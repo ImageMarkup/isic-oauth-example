@@ -38,7 +38,8 @@ setup(
     python_requires='>=3.9',
     packages=find_packages(),
     include_package_data=True,
-    install_requires=['flask', 'authlib'],
+    # manually require requests for authlib: https://github.com/lepture/authlib/issues/365
+    install_requires=['flask', 'authlib', 'requests'],
     extras_require={
         'dev': [
             'ipython',
